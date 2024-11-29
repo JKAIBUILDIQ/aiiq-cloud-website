@@ -1,1 +1,1 @@
-Building Drivora-style sections for AiiQ.cloud with placeholders for About, Case Study, Contact, and Footer.
+Adding 'AiiQ Driven Analytics' and 'Ai Helix' images with a custom mission statement to About Section.
