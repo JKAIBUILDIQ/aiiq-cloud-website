@@ -13,6 +13,28 @@
             color: white;
         }
 
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
         .hero {
             height: 100vh;
             display: flex;
@@ -66,26 +88,31 @@
             color: #333;
         }
 
-        nav {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-            align-items: center;
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
 
-        nav ul li a {
+        section p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        footer {
+            padding: 1rem;
+            background: #111;
+            text-align: center;
+        }
+
+        footer a {
             color: white;
             text-decoration: none;
+            margin: 0 1rem;
         }
 
     </style>
@@ -95,8 +122,8 @@
         <strong>AiiQ.cloud</strong>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -105,9 +132,44 @@
         <p>Empowering Brokers with AI-Driven Solutions for Productivity, Knowledge, and Speed</p>
         <img src="data:image/webp;base64,UklGRrIAAABXRUJQVlA4WAoAAAAQAAAABwAAQUxQSGcAAAABcAIAnQEAAP76IKFnrTIz9BhACzDIiiJjPvl/3KwcKiLYnIVg00Iv4fWGGcVEMF03CbEyxXLNWQA=" alt="Logo Placeholder">
         <div class="cta-buttons">
-            <a href="#">Explore Divisions</a>
-            <a href="#">Learn More</a>
+            <a href="#about">Explore Divisions</a>
+            <a href="#about">Learn More</a>
         </div>
     </section>
+
+    <section id="about">
+        <h2>About AiiQ.cloud</h2>
+        <p>Your trusted partner in AI-driven broker solutions, streamlining productivity and innovation.</p>
+    </section>
+
+    <section id="case-study">
+        <h2>Case Study: AiBuildiQ</h2>
+        <p>Explore our flagship solution revolutionizing real estate lending with cutting-edge AI.</p>
+        <p><em>Placeholder for metrics, visuals, and descriptions.</em></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <small>
+            <a href="#">Privacy Policy</a>
+            •
+            <a href="#">Terms of Service</a>
+        </small>
+    </footer>
 </body>
 </html>

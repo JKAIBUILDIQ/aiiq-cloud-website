@@ -1,1 +1,1 @@
-Creating a Drivora-style layout for AiiQ.cloud, featuring a placeholder for the 3D logo animation.
+Building Drivora-style sections for AiiQ.cloud with placeholders for About, Case Study, Contact, and Footer.
