@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AiiQ.cloud</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #1e1e1e, #333333);
+            color: white;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            width: 250px;
+            animation: spin 6s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .cta-buttons a {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid white;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background: white;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <strong>AiiQ.cloud</strong>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to AiiQ.cloud</h1>
+        <p>Empowering Brokers with AI-Driven Solutions for Productivity, Knowledge, and Speed</p>
+        <img src="data:image/webp;base64,UklGRrIAAABXRUJQVlA4WAoAAAAQAAAABwAAQUxQSGcAAAABcAIAnQEAAP76IKFnrTIz9BhACzDIiiJjPvl/3KwcKiLYnIVg00Iv4fWGGcVEMF03CbEyxXLNWQA=" alt="Logo Placeholder">
+        <div class="cta-buttons">
+            <a href="#">Explore Divisions</a>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>
